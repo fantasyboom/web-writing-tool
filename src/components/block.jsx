@@ -15,7 +15,7 @@ const Block = ({ type, onAddBlockAbove, onAddBlockBelow, onDeleteBlock }) => {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:3001/upload', {
+      const response = await fetch('https://web-writing-tool-server.onrender.com/upload', {
         method: 'POST',
         body: formData,
       });
